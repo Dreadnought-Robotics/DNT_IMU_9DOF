@@ -1,0 +1,4 @@
+<launch>
+  <node name="Filtered_IMU" pkg="DNT_IMU_9DOF" type="IMU_filtering.py" output="screen"/>
+  <node pkg="DNT_rosserial" type="serial_node.py" name="serial_node" />
+</launch>
